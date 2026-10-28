@@ -1,0 +1,167 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #172033;
+    background: #f7f9fc;
+    line-height: 1.6;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 8%;
+    background: white;
+}
+
+.navbar h2 {
+    color: #2457e6;
+}
+
+.navbar nav {
+    display: flex;
+    gap: 25px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #172033;
+}
+
+.hero {
+    padding: 100px 8%;
+    background: linear-gradient(120deg, #eef3ff, #ffffff);
+}
+
+.tagline {
+    color: #2457e6;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.hero h1 {
+    margin: 18px 0;
+    font-size: clamp(42px, 6vw, 72px);
+    line-height: 1.1;
+}
+
+.hero h1 span {
+    color: #2457e6;
+}
+
+.description {
+    max-width: 520px;
+    color: #667085;
+    margin-bottom: 28px;
+}
+
+.hero-button,
+.contact-form button {
+    display: inline-block;
+    border: none;
+    border-radius: 8px;
+    padding: 14px 22px;
+    background: #2457e6;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.about {
+    padding: 55px 8%;
+    text-align: center;
+}
+
+.about p {
+    color: #667085;
+}
+
+.contact {
+    padding: 65px 8%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 55px;
+    align-items: start;
+    background: white;
+}
+
+.contact-info h2 {
+    font-size: 36px;
+    line-height: 1.2;
+    margin: 18px 0;
+}
+
+.contact-info > p:last-child {
+    color: #667085;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.contact-form label {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #d5dbea;
+    border-radius: 7px;
+    font: inherit;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: 2px solid #a9bcff;
+    border-color: #2457e6;
+}
+
+.contact-form button {
+    margin-top: 8px;
+}
+
+footer {
+    padding: 24px;
+    text-align: center;
+    color: #667085;
+    font-size: 14px;
+}
+
+@media (max-width: 700px) {
+    .navbar {
+        padding: 18px 5%;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .navbar nav {
+        gap: 14px;
+    }
+
+    .hero {
+        padding: 70px 6%;
+    }
+
+    .contact {
+        grid-template-columns: 1fr;
+        padding: 45px 6%;
+        gap: 30px;
+    }
+}

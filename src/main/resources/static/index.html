@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Java | Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <h2>Java Project</h2>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<main>
+    <section class="hero" id="home">
+        <p class="tagline">WELCOME TO JAVA PROJECT</p>
+        <h1>Building Something<br><span>Amazing.</span></h1>
+        <p class="description">
+            Have an idea, a question, or a project in mind?
+            We would love to hear from you.
+        </p>
+        <a class="hero-button" href="#contact">Get in Touch &darr;</a>
+    </section>
+
+    <section class="about" id="about">
+        <h2>Let's Connect</h2>
+        <p>Send us a message using the form below.</p>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="contact-info">
+            <p class="tagline">CONTACT US</p>
+            <h2>Let's start a conversation.</h2>
+            <p>Fill out the form and your message will be sent to our backend.</p>
+        </div>
+
+        <form action="/contact" method="post" class="contact-form">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name"
+                   placeholder="Enter your name" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email"
+                   placeholder="Enter your email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5"
+                      placeholder="Write your message..." required></textarea>
+
+            <button type="submit">Send Message &rarr;</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2026 Java Project. Built with Java and Spring Boot.</p>
+</footer>
+
+</body>
+</html>
